@@ -1,5 +1,5 @@
 # Lab Report 1
-Command "cd" example: No arguments
+Command `cd` example: No arguments
 
 ![Image](/lab1images/l1cd1.png)
 
@@ -7,4 +7,4 @@ The working directory upon using this command was `/home/lecture1`. After runnin
 
 ***
 
-Command "cd" example: Directory argument
+Command `cd` example: Directory argument
