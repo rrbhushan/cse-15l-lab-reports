@@ -22,3 +22,50 @@ Command `cd` example: File argument
 The working directory upon using this command was `/home/lecture1/messages`. After running the `cd` command with a file as the argument, it gave us a bash error. The reason for this error is due to the argument not being a directory, but a file. The `cd` command standing for "change directory" will only change between directories, not files which is why this produced an error.
 
 ***
+
+Command `ls` example: No arguments
+
+![Image](/lab1images/l1ls1.png)
+
+The working directory upon using this command was `/home/lecture1`. After running the `ls` command with no arguments,  
+
+***
+
+Command `ls` example: Directory argument
+
+![Image](/lab1images/l1ls2.png)
+
+The working directory upon using this command was `/home/lecture1`. After running the `ls` command with a directory `messages` as an argument,  
+
+***
+
+Command `ls` example: File argument
+
+![Image](/lab1images/l1ls3.png)
+
+The working directory upon using this command was `/home/lecture1/messages`. After running the `ls` command with a file as the argument, 
+
+***
+
+Command `cat` example: No arguments
+
+![Image](/lab1images/l1cat1.png)
+
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with no arguments,  
+
+***
+
+Command `cat` example: Directory argument
+
+![Image](/lab1images/l1cat2.png)
+
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages` as an argument,  
+
+***
+
+Command `cat` example: File argument
+
+![Image](/lab1images/l1cat3.png)
+
+The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, 
+
