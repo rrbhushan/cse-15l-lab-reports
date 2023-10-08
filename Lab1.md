@@ -11,7 +11,7 @@ Command `cd` example: Directory argument
 
 ![Image](/lab1images/l1cd2.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `cd` command with a directory `messages` as an argument, it sent us to the new directory, being `/home/lecture1/messages`, which is intended as typing a child directory from a parent directory always sends us to the child directory. 
+The working directory upon using this command was `/home/lecture1`. After running the `cd` command with a directory `messages/` as an argument, it sent us to the new directory, being `/home/lecture1/messages`, which is intended as typing a child directory from a parent directory always sends us to the child directory. 
 
 ***
 
@@ -59,7 +59,7 @@ Command `cat` example: Directory argument
 
 ![Image](/lab1images/l1cat2.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages` as an argument, the terminal prints out that the provided argument is a directory, so this is an error message. The reason for this is due to the `cat` command being designated towards files (either printing the contents if it exists or creating one if it doesn't) and not directories, so it will not deal with directories.
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages/` as an argument, the terminal prints out that the provided argument is a directory, so this is an error message. The reason for this is due to the `cat` command being designated towards files (either printing the contents if it exists or creating one if it doesn't) and not directories, so it will not deal with directories.
 
 ***
 
