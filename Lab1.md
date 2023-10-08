@@ -27,7 +27,7 @@ Command `ls` example: No arguments
 
 ![Image](/lab1images/l1ls1.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `ls` command with no arguments,  
+The working directory upon using this command was `/home/lecture1`. After running the `ls` command with no arguments, it printed all the files and directories present in the current directory, which is intended. Further, `messages` is highlighted as it is another directory, differentiating it from a typical file.
 
 ***
 
@@ -35,7 +35,7 @@ Command `ls` example: Directory argument
 
 ![Image](/lab1images/l1ls2.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `ls` command with a directory `messages` as an argument,  
+The working directory upon using this command was `/home/lecture1`. After running the `ls` command with a directory `messages/` as an argument, it listed all the files present within the directory `/home/lecture1/messages`, showing all the .txt files present. This is intended behavior as another property of the `ls` command is when you provide a directory as an argument, it will list all the contents within that directory.
 
 ***
 
@@ -43,7 +43,7 @@ Command `ls` example: File argument
 
 ![Image](/lab1images/l1ls3.png)
 
-The working directory upon using this command was `/home/lecture1/messages`. After running the `ls` command with a file as the argument, 
+The working directory upon using this command was `/home/lecture1/messages`. After running the `ls` command with a file as the argument, it just lists the file name. This is the case because `ls` only lists contents within a directory and since this argument is a file and not a directory, it will just default to printing the name of the file, as the file isn't a directory. 
 
 ***
 
@@ -51,7 +51,7 @@ Command `cat` example: No arguments
 
 ![Image](/lab1images/l1cat1.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `cat` command with no arguments,  
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with no arguments, it will cause an error where the terminal goes blank. I had to fix this by using Control+C on my mac which is why it displays `^C` in the output but the reason for this error is that the `cat` command expects a filename to either view or create it and since we do not provide any argument here, it goes blank.
 
 ***
 
@@ -59,7 +59,7 @@ Command `cat` example: Directory argument
 
 ![Image](/lab1images/l1cat2.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages` as an argument,  
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages` as an argument, the terminal prints out that the provided argument is a directory, so this is an error message. The reason for this is due to the `cat` command being designated towards files (either printing the contents if it exists or creating one if it doesn't) and not directories, so it will not deal with directories.
 
 ***
 
@@ -67,5 +67,5 @@ Command `cat` example: File argument
 
 ![Image](/lab1images/l1cat3.png)
 
-The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, 
+The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, it displays the contents of that file. This is intended behavior as the `cat` command is used to either view the contents of a preexisting file or create one if it doesn't exist. Since the file exists, it will print out the contents of that existing file.
 
