@@ -67,5 +67,5 @@ Command `cat` example: File argument
 
 ![Image](/lab1images/l1cat3.png)
 
-The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, it displays the contents of that file. This is intended behavior as the `cat` command is used to view the contents of a preexisting file. Since the file exists, it will print out the contents of that existing file.
+The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, it displays the contents of that file. This is intended behavior as the `cat` command is used to view the contents of a preexisting file when the only argument is a filename. Since the file exists, it will print out the contents of that existing file, otherwise it would have said it does not exist.
 
