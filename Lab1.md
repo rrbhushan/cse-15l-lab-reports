@@ -49,9 +49,9 @@ The working directory upon using this command was `/home/lecture1/messages`. Aft
 
 Command `cat` example: No arguments
 
-![Image](/lab1images/l1cat1.png)
+![Image](/lab1images/l1cat1-2.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `cat` command with no arguments, it will cause an error where the terminal goes blank. I had to fix this by using Control+C on my mac which is why it displays `^C` in the output but the reason for this error is that the `cat` command expects a filename to either view or create it and since we do not provide any argument here, it goes blank.
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with no arguments, it will cause the terminal to go in this state, where typing something and pressing enter will cause it to echo the typed message back. In order to escape this state I used Control+D, but this is intended as `cat` will wait until the end-of-file operator is received, which is done by entering Control+D. Until then, it will repeat anything I type after pressing enter. 
 
 ***
 
@@ -59,7 +59,7 @@ Command `cat` example: Directory argument
 
 ![Image](/lab1images/l1cat2.png)
 
-The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages/` as an argument, the terminal prints out that the provided argument is a directory, so this is an error message. The reason for this is due to the `cat` command being designated towards files (either printing the contents if it exists or creating one if it doesn't) and not directories, so it will not deal with directories.
+The working directory upon using this command was `/home/lecture1`. After running the `cat` command with a directory `messages/` as an argument, the terminal prints out that the provided argument is a directory, so this is an error message. The reason for this is due to the `cat` command being designated towards files and not directories, so it will not deal with directories.
 
 ***
 
@@ -67,5 +67,5 @@ Command `cat` example: File argument
 
 ![Image](/lab1images/l1cat3.png)
 
-The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, it displays the contents of that file. This is intended behavior as the `cat` command is used to either view the contents of a preexisting file or create one if it doesn't exist. Since the file exists, it will print out the contents of that existing file.
+The working directory upon using this command was `/home/lecture1/messages`. After running the `cat` command with a file as the argument, it displays the contents of that file. This is intended behavior as the `cat` command is used to view the contents of a preexisting file. Since the file exists, it will print out the contents of that existing file.
 
