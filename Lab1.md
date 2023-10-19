@@ -41,9 +41,9 @@ The working directory upon using this command was `/home/lecture1`. After runnin
 
 Command `ls` example: File argument
 
-![Image](/lab1images/l1ls3.png)
+![Image](/lab1images/l1ls3-1.png)
 
-The working directory upon using this command was `/home/lecture1/messages`. After running the `ls` command with a file as the argument, it just lists the file name. This is the case because `ls` only lists contents within a directory and since this argument is a file and not a directory, it will just default to printing the name of the file, as the file isn't a directory. 
+The working directory upon using this command was `/home/lecture1/messages`. After running the `ls` command with a file as the argument, it just lists the file name. This is the case because `ls` only lists contents within a directory and since this argument is a file and not a directory, it will just default to printing the name of the file, as the file isn't a directory. Further, if we try using a different filepath as the argument, the output will be the filename of the other specified filepath for the same reason.
 
 ***
 
