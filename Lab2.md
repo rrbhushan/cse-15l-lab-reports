@@ -21,11 +21,16 @@ The methods called in my code are `handleRequest` (which the relevant arguments 
 ### Part 2
 Path to private key for SSH key for logging into ieng6:
 
-![Image](/lab2images/l2ls1.png)
+![Image](/lab2images/l2lspriv.png)
+
+The private key's path is `~/.ssh/id_rsa`.
 
 Path to public key for SSH key for logging into ieng6:
 
-![Image](/lab2images/l2ls2.png)
+![Image](/lab2images/l2lspub.png)
+
+The public key's path is `~/.ssh/authorized_keys`, where `authorized_keys` contains the public key.
+
 
 Logging in without a password prompt:
 
