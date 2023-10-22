@@ -29,9 +29,9 @@ Path to public key for SSH key for logging into ieng6:
 
 Logging in without a password prompt:
 
-![Image](/lab2images/l2ls3.png)
+![Image](/lab2images/l2login.png)
 
 ***
 
 ### Part 3
-Describing something I didn't know.
+I really liked learning about how to create my own server, along with being able to login without needing to input my password to my ieng6 account. Before, I had no clue about any of these, especially with how people create servers but it's a straightforward process, which can be used to apply code that I have written to a more global scale in that anyone can access it and update to the program running by adding in a message, for example. In terms of logging in without needing to input my password, that is a big relief as I do not have to constantly refer back to what I used as my password, with the help of ssh keys. 
