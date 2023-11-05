@@ -69,7 +69,8 @@ static int[] reversed(int[] arr) {
   return newArray;
 }
 ```
-The reason why this fixes the bug is .
+Before, we had our original array being the only one updated, having all its elements replaced with 0s as `newArray` was initialized with all 0s. Because of that, the entire array elements were just turned to 0s, which is not what the `reversed` method should be doing. To fix this, I swapped the ordering of the fourth line so instead of `arr[i]` taking values from `newArray[arr.length - i - 1]`, it is now `newArray[arr.length - i - 1]` taking values from `arr[i]`. At the end, I returned `newArray` rather than `arr` so that I can output a reversed array, not the same array. 
+
 Bug for `reversedInPlace`, before on top and fix on bottom:
 ```java
 static void reverseInPlace(int[] arr) {
