@@ -94,7 +94,7 @@ Before, the array would get reversed for the first half of elements, but for the
 ***
 
 ### Part 2
-For this section, I will be focusing on a few options for the command `grep`, showing a couple of examples of each. For each of these options, I referenced the following [link](https://man7.org/linux/man-pages/man1/grep.1.html), which details on many different options for `grep`.
+For this section, I will be focusing on a few options for the command `grep`, showing a couple of examples of each. For each of these options, I referenced the following [link](https://man7.org/linux/man-pages/man1/grep.1.html) (https://man7.org/linux/man-pages/man1/grep.1.html), which details on many different options for `grep`.
 
 #### Line number (-n):
 ```unix
