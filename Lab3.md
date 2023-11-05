@@ -94,6 +94,34 @@ Before, the array would get reversed for the first half of elements, but for the
 ***
 
 ### Part 2
-For this section, I will be focusing on the command `find`.
+For this section, I will be focusing on a few options for the command `grep`, showing a couple of examples of each.
 
+#### Line number option examples (-n):
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep "listened" ./technical/911report/preface.txt -n
+91:            We have listened to scores of overwhelming personal tragedies and astounding acts of
+```
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep "This" ./technical/911report/chapter-12.txt -n
+9:                This shift has occurred with the full support of the Congress, both major political
+19:            This pattern has occurred before in American history. The United States faces a
+47:            This vagueness blurs the strategy. The catastrophic threat at this moment in history
+111:                the Taliban and pursue al Qaeda. This work continues. But long-term success demands
+145:                thus given the picture of an omnipotent, unslayable hydra of destruction. This image
+169:                identify, disrupt, capture, or kill individual terrorists. This effort was going on
+399:                This is an ambitious recommendation. It would mean a redoubled effort to
+428:                they find in the field. This should include discretionary funds for expenditures by
+456:                This ministry uses zakat and government funds to spread Wahhabi beliefs throughout
+574:                to come. This American engagement is resented. Polls in 2002 found that among
+627:                economic opportunity. This vision includes widespread political participation and
+741:                    flexible contact group of leading coalition governments. This is a good place,
+1065:                    questions and use their judgment. This is not an invitation to arbitrary
+1220:                Transportation Security Act. This act created the Transportation Security
+1302:                    continues. This screening function should be performed by the TSA, and it should
+1349:                greater powers, and then the need for those powers recedes after the war ends. This
+1351:                mindful of threats to vital personal and civil liberties. This balancing is no easy
+1353:            This shift of power and authority to the government calls for an enhanced system of
+1410:                of Homeland Security. This department now has the lead responsibility for problems
+1500:                preparedness. This is entirely appropriate, for the private sector controls 85
+```
 
