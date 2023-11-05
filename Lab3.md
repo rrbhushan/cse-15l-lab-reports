@@ -290,4 +290,4 @@ cost received so far. There still needed to be furnishings and
 
 
 ```
-In this case, the inverse selection is outputted (including new lines which is why there's a lot of spacing in between), which ignores lines that include the phrase specified in the given file. This can be useful for debugging in picking up on any non-method call lines, which gets outputted and can be cross checked to make sure the logic is correct if we already know the specified methods are correct.
+In this case, the inverse selection is outputted (including new lines which is why there's a lot of spacing in between), which ignores lines that include the phrase specified in the given file (in short, none of the outputted lines include the given phrase). This can be useful for debugging in picking up on any non-method call lines, which gets outputted and can be cross checked to make sure the logic is correct if we already know the specified methods are correct.
