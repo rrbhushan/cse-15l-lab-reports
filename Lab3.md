@@ -97,7 +97,7 @@ Before, the array would get reversed for the first half of elements, but for the
 For this section, I will be focusing on a few options for the command `grep`, showing a couple of examples of each. For each of these options, I referenced the following [link](https://man7.org/linux/man-pages/man1/grep.1.html), which details on many different options for `grep`.
 
 #### Line number (-n):
-```unix
+```java
 [ronitbhushan@MacBook-Pro-24 docsearch %] grep "listened" ./technical/911report/preface.txt -n
 91:            We have listened to scores of overwhelming personal tragedies and astounding acts of
 ```
