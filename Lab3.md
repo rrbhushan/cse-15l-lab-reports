@@ -94,7 +94,7 @@ Before, the array would get reversed for the first half of elements, but for the
 ***
 
 ### Part 2
-For this section, I will be focusing on a few options for the command `grep`, showing a couple of examples of each.
+For this section, I will be focusing on a few options for the command `grep`, showing a couple of examples of each. For each of these options, I referenced the following [link](https://man7.org/linux/man-pages/man1/grep.1.html), which details on many different options for `grep`.
 
 #### Line number option examples (-n):
 ```
@@ -124,4 +124,170 @@ For this section, I will be focusing on a few options for the command `grep`, sh
 1410:                of Homeland Security. This department now has the lead responsibility for problems
 1500:                preparedness. This is entirely appropriate, for the private sector controls 85
 ```
+(write a sentence or two about what it’s doing and why it’s useful.)
 
+#### Count (-c):
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep "listened" ./technical/911report/preface.txt -c
+1
+```
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep "This" ./technical/911report/chapter-12.txt -c 
+20
+```
+(write a sentence or two about what it’s doing and why it’s useful.)
+
+#### Ignore case (-i)
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep "This" ./technical/911report/chapter-12.txt -i
+                our nation in this new era. The national debate continues. Countering terrorism has
+                This shift has occurred with the full support of the Congress, both major political
+            This pattern has occurred before in American history. The United States faces a
+                destructive power in the largest cities of the United States. In this sense, 9/11
+                regarded just as we regard terrorism against America "over here." In this same
+            This vagueness blurs the strategy. The catastrophic threat at this moment in history
+                themselves. The United States must support such developments. But this process is
+                efforts should be directed at those individuals and organizations. Calling this
+                the Taliban and pursue al Qaeda. This work continues. But long-term success demands
+                thus given the picture of an omnipotent, unslayable hydra of destruction. This image
+                identify, disrupt, capture, or kill individual terrorists. This effort was going on
+            Every policy decision we make needs to be seen through this lens. If, for example,
+                This is an ambitious recommendation. It would mean a redoubled effort to
+                    this region-wisely, as the 9/11 story shows-and failed half-measures could be
+                    adapt to current security challenges of the future. NATO must pass this test.
+                    rampant crime and narcotics trafficking in this crossroads of Central Asia.
+                they find in the field. This should include discretionary funds for expenditures by
+                This ministry uses zakat and government funds to spread Wahhabi beliefs throughout
+                Arabia. The Saudi government has difficulty acknowledging this. American military
+                declared, "[i]f we do not declare a general mobilization-we will lose this war on
+                to come. This American engagement is resented. Polls in 2002 found that among
+                ascendancy. Only Muslims can do this.
+                economic opportunity. This vision includes widespread political participation and
+                    flexible contact group of leading coalition governments. This is a good place,
+                in this area.
+                this area, the CooperativeThreat Reduction Program (usually referred to as
+                redoubled its international commitments to support this program, and we recommend
+                part. The government should weigh the value of this investment against the
+                Qaeda-perhaps drastically-but it is too soon to know if this reduction will last.
+                    understand this phenomenon well. Other evidence we obtained confirmed the
+                    questions and use their judgment. This is not an invitation to arbitrary
+                "visa waiver" countries will be added to the program, beginning this year, covered
+                this timetable may be too slow, given the possible security dangers.
+                To balance this measure, programs to speed known travelers should be a higher
+                Transportation Security Act. This act created the Transportation Security
+                planned to take over this function when it deploys a new screening system to take
+                the place of CAPPS. The deployment of this system has been delayed because of claims
+                    continues. This screening function should be performed by the TSA, and it should
+                    implement this new system.
+                industry will derive substantial benefits from this deployment, it should pay a fair
+                greater powers, and then the need for those powers recedes after the war ends. This
+                mindful of threats to vital personal and civil liberties. This balancing is no easy
+            This shift of power and authority to the government calls for an enhanced system of
+                this determination.
+                Recommendation: At this time of increased and consolidated
+                of Homeland Security. This department now has the lead responsibility for problems
+                    merit additional support. Congress should not use this money as a pork
+                protect the interests of their home states or districts. But this issue is too
+                occurrence of this problem at three very different sites is strong evidence that
+                preparedness. This is entirely appropriate, for the private sector controls 85
+                was a principal contributing factor to this lack of preparedness.
+```
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep -i "and" ./technical/government/Media/agency_expands.txt
+Legal services agency expands
+legal services to the poor, has expanded into the San Gabriel and
+cultural isolation and service providers' lack of cultural
+And with 13 percent to 15 percent of the Asian population in the
+services and programs available to the poor," he said.
+immigration, housing, public benefits and labor legal services to
+"I remember the days when there were only a handful of people in
+and English are interchangeable. Our goal is to have that for the
+2002 to design and head the project.
+"Now we have people speaking Cantonese, Mandarin, Thai, Khmer
+(from Cambodia), Korean, Vietnamese, Japanese and Tagalog," Yee
+Mak, a family law attorney who speaks Cantonese, Mandarin and
+up in Hong Kong and Thailand before coming to the United States. "I
+could use my language skills and wanted to give back to the Asian
+NLS expanded when Legal Services Corp., the federal agency that
+base from 16,000 to around 25,000, and NLS opened an office in El
+```
+(write a sentence or two about what it’s doing and why it’s useful.)
+
+#### Invert match (-v):
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep -v "and" ./technical/government/Media/agency_expands.txt
+
+
+
+
+
+By Matt Myerhoff
+Published: Friday, July 19, 2002
+PASADENA -- Neighborhood Legal Services, which provides free
+Pomona valleys, areas with large Asian populations, many of whom
+speak limited or no English.
+Language is their biggest obstacle, but the Asian communities'
+expertise also play a part, said NLS executive director Neal
+Dubovitz.
+And with 13 percent to 15 percent of the Asian population in the
+U.S. living below the poverty line, NLS services are badly needed,
+Dubovitz said.
+"Although it is a significant part of the poverty population,
+Asians historically have not been able to participate in the
+From simple telephone advice to complete legal representation in
+court, the agency provides free consumer, health, family,
+people who earn under $1,380 per month.
+Legal service providers have long served large Latino
+populations, who have cultural diversity but share a common
+language.
+the legal offices who spoke Spanish," Dudovitz said. "Now Spanish
+major Asian languages as well."
+Before the expansion, only a few NLS lawyers spoke Asian
+languages, said attorney Rebecca Yee, who was hired by NLS in April
+said.
+One of the 13 attorneys hired to work with the program is Irene
+Thai.
+Mak was a partner at a private law firm before she went to work
+for NLS two years ago, earning up to $20,000 less a year working on
+domestic violence cases.
+"The job is more satisfying than the money," said Mak, who grew
+community."
+funds providers of free legal services nationwide, reduced the
+number of grantees in the Los Angeles area from five to three,
+Dudovitz said.
+NLS won the competitive grant over the Legal Services Program
+for Pasadena, San Gabriel-Pomona valleys. That boosted its client
+Monte.
+
+
+
+
+```
+```
+[ronitbhushan@MacBook-Pro-24 docsearch %] grep -v "the" ./technical/government/Media/5_Legal_Groups.txt 
+
+
+
+
+Vulnerable
+Salt Lake City Tribune
+
+BY EDWARD MCDONOUGH
+Five independent Salt Lake organizations that provide legal
+Legal Center at 205 N. 400 West is a project of "And Justice for
+All," which, until this venture, has been a joint fund-raising
+services. "And Justice for All," which solicits donations primarily
+service law groups.
+parking, something that's hard to find downtown and which has been
+agencies about $375,000 each year. My assistant, Charity
+efficient for those needing legal services. No longer will a woman
+desperate for a protective order, for example, have to run all over
+brick and stone interior walls were all hidden behind coverings and
+Sweet Candy Company building for Tomax. The Olafsons are delighted
+cost received so far. There still needed to be furnishings and
+
+
+
+
+```
+(write a sentence or two about what it’s doing and why it’s useful.)
