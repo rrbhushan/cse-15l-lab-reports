@@ -89,7 +89,7 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
-The reason why this fixes the bug is .
+Before, the array would get reversed for the first half of elements, but for the latter it would just mirror the first half, which is not considered as reversing an array but rather mirroring it. To fix this, I initialized a new variable `a`, stored the value at index i into `a`, replaced the value at index i with the value with the ith position from the end of the array, then replacing the ith position from the end of the array's value with the value stored in the variable `a`. To make sure we do not end up with the same exact array, I made sure to have this process stopped at the midpoint, which is `(arr.length)/2` rather than just `arr.length`. This way, the values can properly swap without having duplicate values where it is not needed, and this will reverse the array without needing to create a new array to return.
 
 ***
 
