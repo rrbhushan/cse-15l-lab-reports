@@ -2,7 +2,9 @@
 ### Part 1
 For this section, I will be focusing on the Array methods bugs, which were in the methods `reversed` and `reversedInPlace` .
 
-Failure-Inducing Input (as JUnit test):
+#### Failure-Inducing Input (as JUnit test):
+
+Testing `reversed` with an array with multiple elements:
 
 ```java
 @Test
@@ -11,8 +13,32 @@ public void testReversedMult() {
   assertArrayEquals(new int[]{ 6 , 4 , 2 }, ArrayExamples.reversed(input1));
 }
 ```
+Testing `reversedInPlace` with an array with multiple elements:
 
-First use of `/add-message`:
+```java
+@Test 
+public void testReverseInPlaceMult() {
+  int[] input1 = { 3 , 5 , 1 , 7 , 9 };
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{ 9 , 7 , 1 , 5 , 3 }, input1);
+}
+```
+
+#### Input that does not induce failure (as JUnit test):
+
+Testing `reversed` with an array with zero elements:
+```java
+@Test
+public void testReversed() {
+  int[] input1 = { };
+  assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+}
+```
+
+Symptoms:
+
+![Image](/lab3images/l3symp.png)
+
 
 ![Image](/lab2images/l2ss1.png)
 
