@@ -5,7 +5,6 @@ For this section, I will be focusing on the Array methods bugs, which were in th
 #### Failure-Inducing Input (as JUnit test):
 
 Testing `reversed` with an array with multiple elements:
-
 ```java
 @Test
 public void testReversedMult() {
@@ -14,7 +13,6 @@ public void testReversedMult() {
 }
 ```
 Testing `reversedInPlace` with an array with multiple elements:
-
 ```java
 @Test 
 public void testReverseInPlaceMult() {
@@ -34,44 +32,67 @@ public void testReversed() {
   assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 }
 ```
+Testing `reversedInPlace` with an array with one element:
+```java
+@Test 
+public void testReverseInPlace() {
+  int[] input1 = { 3 };
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
 
-Symptoms:
+#### Symptoms:
 
 ![Image](/lab3images/l3symp.png)
 
+The reason for the number of tests displaying 5 is due to a fifth test which is not included here.
 
-![Image](/lab2images/l2ss1.png)
+#### Bugs:
 
-The methods called in my code are `handleRequest` (which the relevant arguments is the url provided), `main` (which the relevant argument is the port number specified when initiating the server, taken as a string for the time being), and then methods from Server.java, which include `handle` (relevant argument would be an HttpExchange type input) and `start` (which the relevant arguments are the port provided as an integer and the url handler). In terms of changed values, the argument provided to `main` is taken in as a string, but is changed to an integer for `start` so that it can act as the port number. Additionally, the url input after `?s=` gets treated as a string despite the type specificity, but this is to be treated as a normal case as URLs are just query strings. In this case, the string recorded into `newMess` also has all the "+" instances changed into " " using the `replace` function, as this was done due to my platform being a Mac, which would usually produce a "+" whenever a space was inputted.
-
-Second use of `/add-message`:
-
-![Image](/lab2images/l2ss2.png)
-
-The methods called in my code are `handleRequest` (which the relevant arguments is the url provided), `main` (which the relevant argument is the port number specified when initiating the server, taken as a string for the time being), and then methods from Server.java, which include `handle` (relevant argument would be an HttpExchange type input) and `start` (which the relevant arguments are the port provided as an integer and the url handler). In terms of changed values, the argument provided to `main` is taken in as a string, but is changed to an integer for `start` so that it can act as the port number. Additionally, the url input after `?s=` gets treated as a string despite the type specificity, but this is to be treated as a normal case as URLs are just query strings. Just like the previous case, the string recorded into `newMess` also has all the "+" instances changed into " " using the `replace` function, as this was done due to my platform being a Mac, which would usually produce a "+" whenever a space was inputted. Lastly, the string is being updated with this new `/add-message` request, so it adds another count, followed by the message to be added (all this is recorded under a single string that keeps track of all prior additions).
+Bug for `reversed`, before on top and fix on bottom:
+```java
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+```
+```java
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    newArray[arr.length - i - 1] = arr[i];
+  }
+  return newArray;
+}
+```
+The reason why this fixes the bug is .
+Bug for `reversedInPlace`, before on top and fix on bottom:
+```java
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
+```java
+static void reverseInPlace(int[] arr) {
+  int a = 0;
+  for(int i = 0; i < (arr.length)/2; i += 1) {
+    a = arr[i];
+    arr[i] = arr[arr.length - i - 1];
+    arr[arr.length - i - 1] = a;
+  }
+}
+```
+The reason why this fixes the bug is .
 
 ***
 
 ### Part 2
-Path to private key for SSH key for logging into ieng6:
+For this section, I will be focusing on the command `find`.
 
-![Image](/lab2images/l2lspriv.png)
-
-The private key's path is `~/.ssh/id_rsa`.
-
-Path to public key for SSH key for logging into ieng6:
-
-![Image](/lab2images/l2lspub.png)
-
-The public key's path is `~/.ssh/authorized_keys`, where `authorized_keys` contains the public key.
-
-
-Logging in without a password prompt:
-
-![Image](/lab2images/l2login.png)
-
-***
-
-### Part 3
-I really liked learning about how to create my own server, along with being able to login without needing to input my password to my ieng6 account. Before, I had no clue about any of these, especially with how people create servers but it's a straightforward process, which can be used to apply code that I have written to a more global scale in that anyone can access it and update to the program running by adding in a message, for example. In terms of logging in without needing to input my password, that is a big relief as I do not have to constantly refer back to what I used as my password, with the help of ssh keys. 
 
