@@ -5,12 +5,10 @@ For this section, I will be focusing on the Array methods bugs, which were in th
 Failure-Inducing Input (as JUnit test):
 
 ```java
-{
-  @Test
-  public void testReversedMult() {
-    int[] input1 = { 2 , 4 , 6};
-    assertArrayEquals(new int[]{ 6 , 4 , 2 }, ArrayExamples.reversed(input1));
-  }
+@Test
+public void testReversedMult() {
+  int[] input1 = { 2 , 4 , 6};
+  assertArrayEquals(new int[]{ 6 , 4 , 2 }, ArrayExamples.reversed(input1));
 }
 ```
 
