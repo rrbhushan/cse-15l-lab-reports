@@ -124,7 +124,7 @@ For this section, I will be focusing on a few options for the command `grep`, sh
 1410:                of Homeland Security. This department now has the lead responsibility for problems
 1500:                preparedness. This is entirely appropriate, for the private sector controls 85
 ```
-(write a sentence or two about what it’s doing and why it’s useful.)
+Through this option, I see exactly which lines contain the word "This" and "listened" in the provided files, displaying all the lines containing the phrase provided. This can come handy later on if I am navigating through code to search for a particular variable being used without needing to manually check line by line for each usage.
 
 #### Count (-c):
 ```
@@ -135,7 +135,7 @@ For this section, I will be focusing on a few options for the command `grep`, sh
 [ronitbhushan@MacBook-Pro-24 docsearch %] grep "This" ./technical/911report/chapter-12.txt -c 
 20
 ```
-(write a sentence or two about what it’s doing and why it’s useful.)
+With the count option, I found out how many entries of a specific phrase are there in the file provided, with the first example showing 1 match and the second showing 20 matches. This can be helpful in locating any redundancies within my programs, simplifying my code if it is too verbose/repetitive.
 
 #### Ignore case (-i)
 ```
@@ -211,7 +211,7 @@ could use my language skills and wanted to give back to the Asian
 NLS expanded when Legal Services Corp., the federal agency that
 base from 16,000 to around 25,000, and NLS opened an office in El
 ```
-(write a sentence or two about what it’s doing and why it’s useful.)
+This option makes it so I can find any key phrase in the provided file without bothering with case correctness, like in these examples where especially with chapter-12.txt, I was able to find a lot more matches. Through this, I don't have to worry about missing a particular method or variable mention by just including -i, making this option extremely useful for locating particular variables/method calls.
 
 #### Invert match (-v):
 ```
@@ -290,4 +290,4 @@ cost received so far. There still needed to be furnishings and
 
 
 ```
-(write a sentence or two about what it’s doing and why it’s useful.)
+In this case, the inverse selection is outputted (including new lines which is why there's a lot of spacing in between), which ignores lines that include the phrase specified in the given file. This can be useful for debugging in picking up on any non-method call lines, which gets outputted and can be cross checked to make sure the logic is correct if we already know the specified methods are correct.
