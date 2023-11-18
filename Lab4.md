@@ -12,9 +12,12 @@ The `ssh cs15lfa23sm@ieng6.ucsd.edu` command was 1 up in my search history while
 
 ### Step 5
 
-![Image](/lab4images/s5.png)
+![Image](/lab4images/s5-1.png)
+![Image](/lab4images/s5-2.png)
 
-(description of what I exactly did) 
+Keys pressed: ````<control>, <r>, <g>, <i>, <t>, <space>, <c>, <l>, <enter>````
+
+I used the Ctrl+R to be able to search through my history. Once I entered that history search mode, I typed in `git cl`, which autofilled the rest of the line to show `git clone git@github.com:rrbhushan/lab7.git` (shown by the first screenshot), to which I pressed enter to run the autofilled command in order to clone my fork (shown by the second screenshot).
 
 ***
 
