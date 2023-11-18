@@ -4,7 +4,9 @@
 
 ![Image](/lab4images/s4.png)
 
-(description of what I exactly did) 
+Keys pressed: <up>, <enter>
+
+The `ssh cs15lfa23sm@ieng6.ucsd.edu` command was 1 up in my search history while not logged in so I used the up arrow once to access it, followed by pressing enter to run the command. 
 
 ***
 
