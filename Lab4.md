@@ -44,7 +44,7 @@ To change the file in order to fix the bug, I first used `vim L` and tabbed to a
 
 ### Step 8
 
-![Image](/lab4images/s8.png)
+![Image](/lab4images/s8-1.png)
 
 Keys pressed: ````<up><up><up><enter>, <up><up><up><enter>````
 
