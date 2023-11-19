@@ -27,7 +27,7 @@ I used the Ctrl+R to be able to search through my history. Once I entered that h
 
 Keys pressed: ````<c><d><space><l><tab><enter>, <control><r>, <j><a><v><a><c><enter>, <control><r>, <j><a><v><a><space><-><enter>````
 
-I first used `cd l` to be able to go into the cloned repository, pressing tab and enter right after to autofill and enter the repository. I then used the Ctrl+R to be able to search through my history to search for `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` by typing `javac` then enter. Once that compiled, I used Ctrl+R again this time searching for `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` by typing `java -` then enter to run the tests.
+I first used `cd l` to be able to go into the cloned repository, pressing tab and enter right after to autofill (autofills to `cd lab7/`) and enter the directory. I then used the Ctrl+R to be able to search through my history to search for `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` by typing `javac` then enter. Once that compiled, I used Ctrl+R again this time searching for `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` by typing `java -` then enter to run the tests.
 
 ***
 
